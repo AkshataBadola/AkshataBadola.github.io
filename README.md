@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Akshata Badola — Personal Portfolio
 
 A multi-page, hand-built personal portfolio. **No frameworks, no npm, no build step.** Just HTML, CSS, and a small amount of vanilla JavaScript. Open any file in a browser and it works.
@@ -381,3 +382,7 @@ Tested on evergreen browsers (Chrome, Edge, Firefox, Safari — recent 2 version
 - Everything else: written from scratch.
 
 Have fun with it. — AB
+=======
+# AkshataBadola.github.io
+My personal website. https://www.akshatabadola.tech
+>>>>>>> 0eca7e0e69870da4edda63814456f5d3389126c8
