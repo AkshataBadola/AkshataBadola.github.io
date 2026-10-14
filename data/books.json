@@ -1,0 +1,82 @@
+[
+  {
+    "id": "book-1",
+    "title": "[PLACEHOLDER] Replace me with a favourite",
+    "author": "[ADD: author]",
+    "genre": "Technology",
+    "status": "Favourites",
+    "rating": 5,
+    "note": "A short personal note on why you love this book \u2014 replace with your own words.",
+    "cover": "assets/images/books/placeholder-1.svg"
+  },
+  {
+    "id": "book-2",
+    "title": "[PLACEHOLDER] A psychology favourite",
+    "author": "[ADD: author]",
+    "genre": "Psychology",
+    "status": "Favourites",
+    "rating": 5,
+    "note": "Short personal review \u2014 replace with your own words.",
+    "cover": "assets/images/books/placeholder-2.svg"
+  },
+  {
+    "id": "book-3",
+    "title": "[PLACEHOLDER] A novel you keep rereading",
+    "author": "[ADD: author]",
+    "genre": "Fiction",
+    "status": "Favourites",
+    "rating": 4,
+    "note": "What made this one stick \u2014 your own words go here.",
+    "cover": "assets/images/books/placeholder-3.svg"
+  },
+  {
+    "id": "book-4",
+    "title": "[PLACEHOLDER] Currently reading",
+    "author": "[ADD: author]",
+    "genre": "Personal Development",
+    "status": "Currently reading",
+    "rating": 0,
+    "note": "First impressions so far \u2014 replace with your own words.",
+    "cover": "assets/images/books/placeholder-4.svg"
+  },
+  {
+    "id": "book-5",
+    "title": "[PLACEHOLDER] A recommendation",
+    "author": "[ADD: author]",
+    "genre": "Philosophy",
+    "status": "Recommendations",
+    "rating": 4,
+    "note": "Why you'd pass this on \u2014 your own words.",
+    "cover": "assets/images/books/placeholder-5.svg"
+  },
+  {
+    "id": "book-6",
+    "title": "[PLACEHOLDER] AI / tech recommendation",
+    "author": "[ADD: author]",
+    "genre": "Technology",
+    "status": "Recommendations",
+    "rating": 4,
+    "note": "Why it belongs on an AI/ML reading list \u2014 your words.",
+    "cover": "assets/images/books/placeholder-6.svg"
+  },
+  {
+    "id": "book-7",
+    "title": "[PLACEHOLDER] Fiction recommendation",
+    "author": "[ADD: author]",
+    "genre": "Fiction",
+    "status": "Recommendations",
+    "rating": 4,
+    "note": "What stayed with you \u2014 your words.",
+    "cover": "assets/images/books/placeholder-7.svg"
+  },
+  {
+    "id": "book-8",
+    "title": "[PLACEHOLDER] Other-interests pick",
+    "author": "[ADD: author]",
+    "genre": "Other",
+    "status": "Recommendations",
+    "rating": 4,
+    "note": "A short note \u2014 your words.",
+    "cover": "assets/images/books/placeholder-8.svg"
+  }
+]

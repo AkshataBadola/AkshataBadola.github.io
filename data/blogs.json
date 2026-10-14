@@ -1,0 +1,35 @@
+[
+  {
+    "id": "defensium-blog-1",
+    "title": "[PLACEHOLDER] AI Vulnerabilities in Generative Models — A Primer",
+    "excerpt": "A ground-level introduction to the kinds of security holes that appear when generative AI meets production — written during my time at Defensium Labs.",
+    "date": "[ADD: publish date]",
+    "readTime": "[ADD]",
+    "topic": "AI Security",
+    "image": "assets/images/blogs/placeholder.svg",
+    "link": "[ADD: article URL]",
+    "source": "Defensium Labs"
+  },
+  {
+    "id": "defensium-blog-2",
+    "title": "[PLACEHOLDER] Where AI Meets Cybersecurity",
+    "excerpt": "On the overlap between AI research and traditional cybersecurity — threat models, assumptions, and what practitioners get wrong.",
+    "date": "[ADD: publish date]",
+    "readTime": "[ADD]",
+    "topic": "AI Security",
+    "image": "assets/images/blogs/placeholder.svg",
+    "link": "[ADD: article URL]",
+    "source": "Defensium Labs"
+  },
+  {
+    "id": "defensium-blog-3",
+    "title": "[PLACEHOLDER] Teaching a Model to Be Vulnerable",
+    "excerpt": "Notes from building a deliberately-vulnerable generative model used as a teaching aid for AI security research.",
+    "date": "[ADD: publish date]",
+    "readTime": "[ADD]",
+    "topic": "Generative AI",
+    "image": "assets/images/blogs/placeholder.svg",
+    "link": "[ADD: article URL]",
+    "source": "Defensium Labs"
+  }
+]

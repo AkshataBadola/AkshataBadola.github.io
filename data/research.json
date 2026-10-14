@@ -1,0 +1,47 @@
+[
+  {
+    "id": "network-intrusion-unsw",
+    "title": "Detecting and Classifying Multiple Network Intrusions Using the Real-Time Dataset",
+    "status": "Under Review",
+    "statusClass": "status-under-review",
+    "venue": "Scopus-Indexed Q2 Journal",
+    "year": "2025",
+    "authors": ["Akshata Badola", "Dr. Amol Vibhute (Supervisor)"],
+    "area": "ML Security · Network Security",
+    "abstract": "Research on machine-learning approaches for network intrusion detection using the UNSW-NB15 dataset. The study covers data preprocessing, feature engineering, and dataset balancing, followed by the implementation and evaluation of Artificial Neural Networks and Random Forest models. Controlled experiments compare model performance using accuracy, precision, recall, and ROC analysis. The resulting manuscript is co-authored and currently under peer review for international publication.",
+    "pdf": "",
+    "doi": "",
+    "code": "[ADD: GitHub link]",
+    "notes": "Co-authored with Dr. Amol Vibhute, Assistant Professor, Symbiosis Institute of Computer Studies and Research."
+  },
+  {
+    "id": "placeholder-paper-1",
+    "title": "[PLACEHOLDER] Working Title of Second Paper",
+    "status": "In Progress",
+    "statusClass": "status-in-progress",
+    "venue": "[ADD: target venue]",
+    "year": "2026",
+    "authors": ["Akshata Badola"],
+    "area": "[ADD: research area]",
+    "abstract": "[ADD: short abstract of the paper. Replace this placeholder once you are ready to publicise the work. Keep private manuscripts out of this file.]",
+    "pdf": "",
+    "doi": "",
+    "code": "",
+    "notes": "Placeholder — remove or replace."
+  },
+  {
+    "id": "placeholder-paper-2",
+    "title": "[PLACEHOLDER] Preprint Title",
+    "status": "Preprint",
+    "statusClass": "status-preprint",
+    "venue": "arXiv",
+    "year": "2026",
+    "authors": ["Akshata Badola", "[ADD: co-authors]"],
+    "area": "[ADD: research area]",
+    "abstract": "[ADD: abstract].",
+    "pdf": "",
+    "doi": "",
+    "code": "",
+    "notes": "Placeholder — remove or replace."
+  }
+]

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Multilingual Translation">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a2454"/><stop offset="1" stop-color="#5a3a7a"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#fff" opacity=".18"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="380" fill="url(#g)"/>
+  <rect width="600" height="380" fill="url(#dots)"/>
+  <g opacity=".85" transform="translate(300 180)"><g fill="#fff" font-family="serif" text-anchor="middle"><text y="12" font-size="60" font-weight="600">A文</text></g></g>
+  <g font-family="'Inter', sans-serif" fill="#fff" opacity=".9">
+    <text x="300" y="320" text-anchor="middle" font-size="22" font-weight="600">Multilingual Translation</text>
+  </g>
+</svg>

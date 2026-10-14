@@ -1,0 +1,58 @@
+/* ==========================================================================
+   responsive.css — Media-query tweaks on top of the mobile-first base.
+   Breakpoints: 480 (phone-l), 768 (tablet), 1024 (small desktop), 1440 (large)
+   ========================================================================== */
+
+/* ---------- < 1024px ---------- */
+@media (max-width: 1024px) {
+  .hero__inner { gap: var(--space-6); }
+  .card-grid--wide { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+}
+
+/* ---------- < 768px (tablet) ---------- */
+@media (max-width: 768px) {
+  section { padding-block: var(--space-7); }
+  .hero { min-height: auto; padding-top: var(--space-6); }
+  .section-header { align-items: flex-start; }
+  .experience-block { padding: var(--space-5); }
+  .modal__panel { padding: var(--space-5); max-height: 90vh; }
+  .about-portrait { aspect-ratio: 1/1; max-width: 280px; }
+}
+
+/* ---------- < 480px (phone) ---------- */
+@media (max-width: 480px) {
+  :root { --nav-height: 64px; }
+  .brand { font-size: var(--fs-base); }
+  .brand__mark { width: 32px; height: 32px; font-size: var(--fs-sm); }
+  .hero__ctas .btn { flex: 1; min-width: 140px; justify-content: center; }
+  .filter-bar { gap: 6px; }
+  .filter-btn { padding: 6px 12px; font-size: var(--fs-xs); }
+  .search-input { max-width: 100%; }
+  .card { padding: var(--space-4); }
+  .project-card__media { margin: -1rem -1rem 1rem; }
+  .masonry { columns: 1; }
+  .blog-card, .book-card { grid-template-columns: 1fr; }
+  .book-card__cover { max-width: 140px; }
+  .back-to-top { right: 14px; bottom: 14px; width: 42px; height: 42px; }
+  .lightbox__prev, .lightbox__next { width: 40px; height: 40px; }
+}
+
+/* ---------- very large screens ---------- */
+@media (min-width: 1440px) {
+  :root { --container-max: 1280px; }
+}
+
+/* ---------- touch: disable hover tilt ---------- */
+@media (hover: none) {
+  .card:hover,
+  .book-card:hover,
+  .blog-card:hover,
+  .video-card:hover,
+  .volunteer-card:hover,
+  .beyond-card:hover { transform: none; }
+}
+
+/* Hide decorative blobs if the user prefers reduced data */
+@media (prefers-reduced-data: reduce) {
+  .bg-blobs { display: none; }
+}

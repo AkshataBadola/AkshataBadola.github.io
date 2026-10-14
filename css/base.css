@@ -1,0 +1,234 @@
+/* ==========================================================================
+   base.css — Reset, CSS custom properties (design tokens), and typography.
+   Everything that defines "what the site looks like at the atomic level"
+   lives here. Change a token here to re-theme the whole site.
+   ========================================================================== */
+
+/* ---------- 1. Modern reset -------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+html, body { height: 100%; }
+img, picture, svg, video { display: block; max-width: 100%; }
+button, input, textarea, select { font: inherit; color: inherit; }
+button { background: none; border: none; cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+input, textarea { background: transparent; border: none; outline: none; }
+
+/* Smooth, but keep accessibility promises */
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---------- 2. Design tokens (CSS variables) --------------------------- */
+:root {
+  /* --- Colour: Midnight-indigo surface palette --- */
+  --bg-0: #0e0f1a;          /* page background, deepest */
+  --bg-1: #141627;          /* elevated surface */
+  --bg-2: #1b1e34;          /* card surface */
+  --bg-3: #242748;          /* hovered card / inner element */
+  --surface-glass: rgba(27, 30, 52, 0.55);
+  --surface-glass-strong: rgba(20, 22, 39, 0.78);
+
+  /* --- Colour: Text --- */
+  --text-primary: #f3f1ea;   /* warm white */
+  --text-secondary: #b8b9ce; /* cool muted */
+  --text-tertiary: #7f8199;  /* dim labels, meta */
+
+  /* --- Colour: Borders --- */
+  --border-soft: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  /* --- Colour: Accents --- */
+  --accent-violet: #a99bff;        /* primary — soft lavender/periwinkle */
+  --accent-violet-strong: #7c6cff; /* on-hover / solid state */
+  --accent-teal: #7ad7c6;          /* secondary muted mint/teal */
+  --accent-coral: #f0a98e;         /* warm highlight (sparingly) */
+  --accent-gold: #e6c585;          /* editorial accent */
+
+  /* --- Semantic --- */
+  --color-link: var(--accent-violet);
+  --color-link-hover: #c9bfff;
+  --color-success: #7ad7c6;
+  --color-error:   #ff8c9a;
+  --focus-ring:    0 0 0 2px var(--bg-0), 0 0 0 4px var(--accent-violet);
+
+  /* --- Gradients (used sparingly for hero + highlights) --- */
+  --gradient-aurora:
+    radial-gradient(1200px 500px at 10% -10%, rgba(169,155,255,0.22), transparent 60%),
+    radial-gradient(900px 500px at 110% 20%, rgba(240,169,142,0.14), transparent 55%),
+    radial-gradient(800px 500px at 50% 110%, rgba(122,215,198,0.14), transparent 55%);
+  --gradient-text:
+    linear-gradient(135deg, var(--accent-violet) 0%, var(--accent-coral) 60%, var(--accent-gold) 100%);
+  --gradient-card-hover:
+    linear-gradient(135deg, rgba(169,155,255,0.08), rgba(240,169,142,0.06));
+
+  /* --- Typography scale --- */
+  --font-display: "Fraunces", "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-xs:   clamp(0.75rem, 0.72rem + 0.1vw, 0.8rem);
+  --fs-sm:   clamp(0.85rem, 0.82rem + 0.1vw, 0.9rem);
+  --fs-base: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+  --fs-lg:   clamp(1.1rem, 1rem + 0.4vw, 1.25rem);
+  --fs-xl:   clamp(1.35rem, 1.2rem + 0.6vw, 1.6rem);
+  --fs-2xl:  clamp(1.75rem, 1.4rem + 1.4vw, 2.4rem);
+  --fs-3xl:  clamp(2.25rem, 1.8rem + 2vw, 3.2rem);
+  --fs-hero: clamp(2.75rem, 2rem + 4vw, 5rem);
+
+  --lh-tight: 1.15;
+  --lh-base: 1.6;
+  --lh-loose: 1.75;
+
+  /* --- Spacing scale --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  /* --- Radius --- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* --- Shadow / glow --- */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.25);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.35);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.45);
+  --glow-violet: 0 0 36px rgba(169,155,255,0.22);
+  --glow-coral:  0 0 36px rgba(240,169,142,0.2);
+
+  /* --- Layout --- */
+  --container-max: 1200px;
+  --container-narrow: 820px;
+  --nav-height: 72px;
+  --transition-fast: 150ms cubic-bezier(.4,.0,.2,1);
+  --transition-base: 260ms cubic-bezier(.4,.0,.2,1);
+  --transition-slow: 480ms cubic-bezier(.4,.0,.2,1);
+}
+
+/* ---------- 3. Optional light theme (toggle via [data-theme=light]) ---- */
+[data-theme="light"] {
+  --bg-0: #f6f3ec;
+  --bg-1: #ffffff;
+  --bg-2: #fbf7ee;
+  --bg-3: #efe9db;
+  --surface-glass: rgba(255,255,255,0.7);
+  --surface-glass-strong: rgba(255,255,255,0.9);
+  --text-primary: #1b1e34;
+  --text-secondary: #4a4d66;
+  --text-tertiary: #767893;
+  --border-soft: rgba(27,30,52,0.09);
+  --border-strong: rgba(27,30,52,0.18);
+  --accent-violet: #6a56f0;
+  --accent-violet-strong: #4b36d0;
+  --color-link: #6a56f0;
+  --color-link-hover: #4b36d0;
+  --gradient-aurora:
+    radial-gradient(1200px 500px at 10% -10%, rgba(106,86,240,0.1), transparent 60%),
+    radial-gradient(900px 500px at 110% 20%, rgba(240,169,142,0.1), transparent 55%),
+    radial-gradient(800px 500px at 50% 110%, rgba(122,215,198,0.12), transparent 55%);
+}
+
+/* ---------- 4. Base typography & body ---------------------------------- */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  color: var(--text-primary);
+  background: var(--bg-0);
+  background-image: var(--gradient-aurora);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+h1 { font-size: var(--fs-hero); letter-spacing: -0.02em; }
+h2 { font-size: var(--fs-3xl); }
+h3 { font-size: var(--fs-2xl); }
+h4 { font-size: var(--fs-xl); }
+h5 { font-size: var(--fs-lg); }
+h6 { font-size: var(--fs-base); text-transform: uppercase; letter-spacing: 0.08em; font-family: var(--font-sans); font-weight: 600; }
+
+p { color: var(--text-secondary); max-width: 70ch; }
+
+a {
+  color: var(--color-link);
+  transition: color var(--transition-fast);
+}
+a:hover { color: var(--color-link-hover); }
+
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+
+::selection {
+  background: rgba(169,155,255,0.35);
+  color: var(--text-primary);
+}
+
+/* Focus ring applied everywhere interactive */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 4px;
+}
+
+/* Utility: screen-reader-only label */
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  top: -40px; left: 0;
+  background: var(--accent-violet);
+  color: var(--bg-0);
+  padding: var(--space-3) var(--space-5);
+  z-index: 2000;
+  border-radius: 0 0 var(--radius-md) 0;
+  font-weight: 600;
+}
+.skip-link:focus { top: 0; color: var(--bg-0); }
+
+/* Gradient text helper */
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

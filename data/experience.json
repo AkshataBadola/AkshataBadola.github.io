@@ -1,0 +1,73 @@
+[
+  {
+    "id": "dravita",
+    "role": "Backend + Research Intern",
+    "company": "Dravita.ai",
+    "location": "Pune (Remote)",
+    "start": "Jan 2025",
+    "end": "Aug 2025",
+    "summary": "Built scalable data pipelines and PostgreSQL architecture for an AI-driven nutritional analysis platform.",
+    "bullets": [
+      "Built scalable Python data pipelines for processing large structured datasets used in AI-driven nutritional analysis.",
+      "Designed and optimized a PostgreSQL data architecture supporting large-scale dataset management.",
+      "Conducted data analysis and preprocessing for ML-ready datasets, improving data quality and consistency.",
+      "Implemented automated workflows using pandas and Python scripting to streamline dataset generation.",
+      "Created system architecture diagrams and documentation to support future AI model integration and research workflows."
+    ],
+    "tech": ["Python", "PostgreSQL", "pandas", "ETL", "Data Architecture"],
+    "links": []
+  },
+  {
+    "id": "detoxio",
+    "role": "LLM Security Intern",
+    "company": "Detoxio.ai",
+    "location": "Bangalore (Remote)",
+    "start": "Oct 2024",
+    "end": "Dec 2024",
+    "summary": "Systematic security evaluation of Large Language Models — adversarial testing, benchmarking, and automation.",
+    "bullets": [
+      "Conducted systematic security evaluation of Large Language Models, analyzing failure modes and response vulnerabilities.",
+      "Designed and implemented automated testing frameworks in Python to benchmark LLM behavior across adversarial prompts.",
+      "Built tools to generate and evaluate 1000+ prompt-based test scenarios for large language model robustness analysis.",
+      "Performed experimental analysis of model outputs, identifying patterns in hallucinations, safety bypass, and adversarial prompts.",
+      "Developed wrappers and automation scripts to streamline LLM testing pipelines, reducing evaluation time by 60%."
+    ],
+    "tech": ["Python", "LLMs", "Adversarial Testing", "Automation", "Benchmarking"],
+    "links": []
+  },
+  {
+    "id": "defensium",
+    "role": "AI Security and Research Intern",
+    "company": "Defensium Labs",
+    "location": "Jaipur (Remote)",
+    "start": "Jun 2024",
+    "end": "Oct 2024",
+    "summary": "Researched AI vulnerabilities, built a deliberately-vulnerable generative model for education, and authored technical content.",
+    "bullets": [
+      "Conducted in-depth research on AI vulnerabilities to identify and analyze potential threats.",
+      "Developed a generative AI model with built-in vulnerabilities for testing and educational purposes.",
+      "Implemented AI vulnerabilities within the generative model to enhance understanding of security risks.",
+      "Authored comprehensive blogs and technical content focused on AI security and the intersection of AI and cybersecurity."
+    ],
+    "tech": ["Generative AI", "AI Security", "Technical Writing", "Research"],
+    "links": [],
+    "isDefensium": true,
+    "sidePath": "content.html"
+  },
+  {
+    "id": "cursor-sicsr",
+    "role": "Web Development Team Member",
+    "company": "Cursor Magazine, SICSR",
+    "location": "Pune, Maharashtra",
+    "start": "Jan 2024",
+    "end": "Sep 2024",
+    "summary": "Collaborated on the magazine's digital platform — layout, CMS workflow, and student engagement features.",
+    "bullets": [
+      "Collaborated with the graphic design team to create a visually appealing website layout, contributing to a 15% increase in student engagement.",
+      "Implemented a new content management system to streamline article publication, leading to a 30% increase in available resources for students.",
+      "Technology used: Drupal."
+    ],
+    "tech": ["Drupal", "HTML/CSS", "CMS"],
+    "links": []
+  }
+]

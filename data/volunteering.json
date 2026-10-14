@@ -1,0 +1,31 @@
+[
+  {
+    "id": "placeholder-vol-1",
+    "org": "[PLACEHOLDER] Organisation name",
+    "role": "[ADD: your role]",
+    "cause": "[ADD: cause / community]",
+    "start": "[ADD: start]",
+    "end": "[ADD: end or 'Present']",
+    "summary": "A short line about what you did and why it mattered. Replace with your own description.",
+    "activities": [
+      "[ADD: a responsibility]",
+      "[ADD: an activity]",
+      "[ADD: a skill or lesson gained]"
+    ],
+    "link": ""
+  },
+  {
+    "id": "placeholder-vol-2",
+    "org": "[PLACEHOLDER] Another organisation",
+    "role": "[ADD: your role]",
+    "cause": "[ADD: cause / community]",
+    "start": "[ADD: start]",
+    "end": "[ADD: end]",
+    "summary": "Another short description — replace with your real volunteering story.",
+    "activities": [
+      "[ADD]",
+      "[ADD]"
+    ],
+    "link": ""
+  }
+]

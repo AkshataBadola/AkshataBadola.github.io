@@ -1,0 +1,29 @@
+[
+  {
+    "id": "defensium-vid-1",
+    "title": "[PLACEHOLDER] AI Security Explainer",
+    "description": "Short-form social explainer created for Defensium Labs. Replace this with the real link + thumbnail.",
+    "platform": "LinkedIn",
+    "date": "[ADD: publish date]",
+    "thumb": "assets/images/videos/placeholder.svg",
+    "link": "[ADD: video URL]"
+  },
+  {
+    "id": "defensium-vid-2",
+    "title": "[PLACEHOLDER] Generative Model Demo",
+    "description": "Walkthrough of the deliberately-vulnerable generative model used in internal testing.",
+    "platform": "YouTube",
+    "date": "[ADD: publish date]",
+    "thumb": "assets/images/videos/placeholder.svg",
+    "link": "[ADD: video URL]"
+  },
+  {
+    "id": "defensium-vid-3",
+    "title": "[PLACEHOLDER] Prompt-Injection, Illustrated",
+    "description": "A quick visual breakdown of how prompt-injection attacks on LLMs work.",
+    "platform": "Instagram",
+    "date": "[ADD: publish date]",
+    "thumb": "assets/images/videos/placeholder.svg",
+    "link": "[ADD: video URL]"
+  }
+]

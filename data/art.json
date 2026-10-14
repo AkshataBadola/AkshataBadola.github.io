@@ -1,0 +1,56 @@
+[
+  {
+    "id": "art-1",
+    "title": "[PLACEHOLDER] Study in Indigo",
+    "description": "Short note about the piece, what you were exploring, what medium you used.",
+    "medium": "Watercolour",
+    "year": "[ADD]",
+    "category": "Painting",
+    "image": "assets/images/artwork/placeholder-1.svg"
+  },
+  {
+    "id": "art-2",
+    "title": "[PLACEHOLDER] Sketch Series — I",
+    "description": "Caption placeholder — replace with a real line about this piece.",
+    "medium": "Graphite on paper",
+    "year": "[ADD]",
+    "category": "Sketches",
+    "image": "assets/images/artwork/placeholder-2.svg"
+  },
+  {
+    "id": "art-3",
+    "title": "[PLACEHOLDER] Digital Composition",
+    "description": "Caption placeholder — replace with a real line about this piece.",
+    "medium": "Procreate",
+    "year": "[ADD]",
+    "category": "Digital",
+    "image": "assets/images/artwork/placeholder-3.svg"
+  },
+  {
+    "id": "art-4",
+    "title": "[PLACEHOLDER] Mixed-Media Study",
+    "description": "Caption placeholder — replace with a real line about this piece.",
+    "medium": "Acrylic + ink",
+    "year": "[ADD]",
+    "category": "Painting",
+    "image": "assets/images/artwork/placeholder-4.svg"
+  },
+  {
+    "id": "art-5",
+    "title": "[PLACEHOLDER] Sketch Series — II",
+    "description": "Caption placeholder — replace with a real line about this piece.",
+    "medium": "Ink",
+    "year": "[ADD]",
+    "category": "Sketches",
+    "image": "assets/images/artwork/placeholder-5.svg"
+  },
+  {
+    "id": "art-6",
+    "title": "[PLACEHOLDER] Portrait Study",
+    "description": "Caption placeholder — replace with a real line about this piece.",
+    "medium": "Charcoal",
+    "year": "[ADD]",
+    "category": "Sketches",
+    "image": "assets/images/artwork/placeholder-6.svg"
+  }
+]

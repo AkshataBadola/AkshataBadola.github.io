@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" preserveAspectRatio="xMidYMid slice" role="img" aria-label="NLP · Mental Health">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a2a5a"/><stop offset="1" stop-color="#7a4a5a"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#fff" opacity=".18"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="380" fill="url(#g)"/>
+  <rect width="600" height="380" fill="url(#dots)"/>
+  <g opacity=".85" transform="translate(300 180)"><g stroke="#fff" stroke-width="3" fill="none"><polyline points="-40,20 -15,0 10,-15 35,-30"/><circle r="4" cx="-40" cy="20" fill="#fff"/><circle r="4" cx="-15" cy="0" fill="#fff"/><circle r="4" cx="10" cy="-15" fill="#fff"/><circle r="4" cx="35" cy="-30" fill="#fff"/></g></g>
+  <g font-family="'Inter', sans-serif" fill="#fff" opacity=".9">
+    <text x="300" y="320" text-anchor="middle" font-size="22" font-weight="600">NLP · Mental Health</text>
+  </g>
+</svg>

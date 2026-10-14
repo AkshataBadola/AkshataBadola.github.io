@@ -1,0 +1,116 @@
+[
+  {
+    "id": "mbart-translation",
+    "title": "Multilingual Transformer Fine-Tuning for Low-Resource Translation",
+    "summary": "Fine-tuning Facebook AI's mBART on low-resource language pairs with efficient training tricks.",
+    "category": "NLP",
+    "status": "Ongoing",
+    "image": "assets/images/projects/mbart.svg",
+    "tags": ["PyTorch", "mBART", "HuggingFace", "NLP", "Transformers"],
+    "github": "[ADD: GitHub link]",
+    "demo": "",
+    "featured": true,
+    "details": {
+      "problem": "Low-resource languages suffer from poor machine-translation quality because large pretrained models are optimized for high-resource pairs.",
+      "approach": "Fine-tuned the pretrained Facebook AI Research mBART multilingual encoder-decoder model on low-resource language datasets to improve translation quality. Designed a complete NLP training pipeline including dataset preprocessing, tokenization, batching, and GPU-based training.",
+      "implementation": "Used gradient accumulation and optimized batching to reduce memory usage during transformer training. Experimented with beam search and top-k sampling decoding strategies to analyse the effect on quality and inference speed.",
+      "results": "Running controlled experiments comparing baseline pretrained performance with fine-tuned models across multiple language pairs. [ADD: specific metric improvements once experiments conclude.]",
+      "future": "Add adapter-based fine-tuning (LoRA) and expand to additional language pairs."
+    }
+  },
+  {
+    "id": "mental-health-nlp",
+    "title": "NLP for Mental Health Diagnosis",
+    "summary": "Classification system to detect mental health conditions from textual data using classical ML + NLP preprocessing.",
+    "category": "NLP",
+    "status": "Dec 2024 – Feb 2025",
+    "image": "assets/images/projects/mental-health.svg",
+    "tags": ["Python", "NLTK", "spaCy", "scikit-learn", "NLP"],
+    "github": "[ADD: GitHub link]",
+    "demo": "",
+    "featured": true,
+    "details": {
+      "problem": "Early signals of mental-health difficulties often appear in written language. Automated screening could support — not replace — human care.",
+      "approach": "Built preprocessing pipelines with NLTK and spaCy including tokenization, stop-word removal, and vectorization. Trained and evaluated multiple classical models (Naive Bayes, Random Forest, Logistic Regression).",
+      "implementation": "Compared models across common text-classification metrics; visualised results with ROC curves, learning curves, and precision-recall analysis to understand model behaviour.",
+      "results": "Comparative evaluation across models complete; findings are documented in the repo README.",
+      "future": "Explore transformer-based baselines (DistilBERT) and multi-label formulations."
+    }
+  },
+  {
+    "id": "chronicler-sicsr",
+    "title": "Chronicler — Timetable & Schedule System for SICSR",
+    "summary": "Modern timetable experience for SICSR students built on MRBS, with a cleaner UI and faster filtering.",
+    "category": "Web Development",
+    "status": "Jun 2024 – Aug 2024",
+    "image": "assets/images/projects/chronicler.svg",
+    "tags": ["Python", "Django", "Poetry", "JavaScript", "MRBS"],
+    "github": "[ADD: GitHub link]",
+    "demo": "",
+    "featured": true,
+    "details": {
+      "problem": "The existing SICSR timetable interface was clunky; filtering was slow and the experience discouraged use.",
+      "approach": "Rebuilt the student-facing timetable using MRBS as the backing engine with a thin, modern layer on top.",
+      "implementation": "Key features: web scraper, data caching + validation, both web and textual UIs, CI/CD, and test coverage. Core philosophy: minimalistic, responsive, performant components.",
+      "results": "Students can now access, filter, and read timetables in a far more intuitive flow.",
+      "future": "Push notifications for schedule changes, calendar sync."
+    }
+  },
+  {
+    "id": "intrusion-detection",
+    "title": "Network Intrusion Detection on UNSW-NB15",
+    "summary": "ML + ANN pipeline detecting and classifying multiple network intrusions, with full comparative evaluation.",
+    "category": "Machine Learning",
+    "status": "Research project",
+    "image": "assets/images/projects/intrusion.svg",
+    "tags": ["Python", "scikit-learn", "ANN", "Random Forest", "UNSW-NB15"],
+    "github": "[ADD: GitHub link]",
+    "demo": "",
+    "featured": false,
+    "details": {
+      "problem": "Detect and classify multiple network intrusions using a real-time dataset.",
+      "approach": "Preprocessed and balanced the UNSW-NB15 dataset; implemented Artificial Neural Networks and Random Forest classifiers.",
+      "implementation": "Evaluated models with accuracy, precision, recall, and ROC analysis; co-authored a research manuscript (currently under peer review).",
+      "results": "Manuscript submitted to a Scopus-indexed Q2 journal; under review.",
+      "future": "Extend to ensemble models and streaming / online classification."
+    }
+  },
+  {
+    "id": "placeholder-cv",
+    "title": "[PLACEHOLDER] Computer Vision Side-Project",
+    "summary": "A short description of a CV project — replace this placeholder with a real entry when ready.",
+    "category": "Computer Vision",
+    "status": "Placeholder",
+    "image": "assets/images/projects/placeholder.svg",
+    "tags": ["PyTorch", "OpenCV", "CNN"],
+    "github": "[ADD: GitHub link]",
+    "demo": "",
+    "featured": false,
+    "details": {
+      "problem": "[ADD: problem statement]",
+      "approach": "[ADD: your approach]",
+      "implementation": "[ADD: implementation details]",
+      "results": "[ADD: results]",
+      "future": "[ADD: future improvements]"
+    }
+  },
+  {
+    "id": "placeholder-automation",
+    "title": "[PLACEHOLDER] Automation Tool",
+    "summary": "An automation / developer-tool project — swap this for one of your own.",
+    "category": "Automation & Tools",
+    "status": "Placeholder",
+    "image": "assets/images/projects/placeholder.svg",
+    "tags": ["Python", "Bash", "CLI"],
+    "github": "[ADD: GitHub link]",
+    "demo": "",
+    "featured": false,
+    "details": {
+      "problem": "[ADD: problem statement]",
+      "approach": "[ADD: your approach]",
+      "implementation": "[ADD: implementation details]",
+      "results": "[ADD: results]",
+      "future": "[ADD: future improvements]"
+    }
+  }
+]
