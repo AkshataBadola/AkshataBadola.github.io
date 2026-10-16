@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
   <defs>
     <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0e0f1a"/>
-      <stop offset="1" stop-color="#2a2454"/>
+      <stop offset="0" stop-color="#FCFDF8"/>
+      <stop offset="1" stop-color="#C9B9EF"/>
     </linearGradient>
-    <radialGradient id="glow" cx="30%" cy="40%" r="40%">
-      <stop offset="0" stop-color="#a99bff" stop-opacity=".3"/>
-      <stop offset="1" stop-color="#a99bff" stop-opacity="0"/>
+    <radialGradient id="glow" cx="80%" cy="80%" r="40%">
+      <stop offset="0" stop-color="#B2C14A" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#B2C14A" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="80%" cy="80%" r="40%">
-      <stop offset="0" stop-color="#f0a98e" stop-opacity=".25"/>
-      <stop offset="1" stop-color="#f0a98e" stop-opacity="0"/>
+    <radialGradient id="glow2" cx="30%" cy="20%" r="35%">
+      <stop offset="0" stop-color="#B4CEF3" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#B4CEF3" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#og)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
   <rect width="1200" height="630" fill="url(#glow2)"/>
-  <g font-family="'Fraunces', Georgia, serif" fill="#f3f1ea">
-    <text x="80" y="280" font-size="88" font-weight="500">Akshata Badola</text>
-    <text x="80" y="360" font-size="36" fill="#b8b9ce" font-family="'Inter', sans-serif">AI/ML · Researcher · Builder · Creative</text>
-    <text x="80" y="560" font-size="22" fill="#7f8199" font-family="'Inter', sans-serif" letter-spacing="4">PORTFOLIO · 2026</text>
+  <g font-family="'Alegreya', Georgia, serif" fill="#1E1E1E">
+    <text x="80" y="280" font-size="100" font-weight="600">Akshata Badola</text>
+    <text x="80" y="360" font-size="36" font-family="'Manrope', sans-serif" font-weight="500">AI/ML · Researcher · Builder · Creative</text>
+    <text x="80" y="560" font-size="22" font-family="'Manrope', sans-serif" font-weight="600" letter-spacing="4" opacity=".7">PORTFOLIO · 2026</text>
   </g>
 </svg>

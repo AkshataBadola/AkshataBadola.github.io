@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Akshata Badola — Personal Portfolio
 
 A multi-page, hand-built personal portfolio. **No frameworks, no npm, no build step.** Just HTML, CSS, and a small amount of vanilla JavaScript. Open any file in a browser and it works.
@@ -377,12 +376,8 @@ Tested on evergreen browsers (Chrome, Edge, Firefox, Safari — recent 2 version
 
 ## Credits
 
-- Fonts: [Fraunces](https://fonts.google.com/specimen/Fraunces), [Inter](https://fonts.google.com/specimen/Inter), [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) via Google Fonts.
+- Fonts: [Alegreya](https://fonts.google.com/specimen/Alegreya) for headlines, [Manrope](https://fonts.google.com/specimen/Manrope) for body, [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) for code — all via Google Fonts.
 - SVG placeholder art: generated for this project.
 - Everything else: written from scratch.
 
 Have fun with it. — AB
-=======
-# AkshataBadola.github.io
-My personal website. https://www.akshatabadola.tech
->>>>>>> 0eca7e0e69870da4edda63814456f5d3389126c8

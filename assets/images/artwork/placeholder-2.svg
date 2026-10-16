@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Artwork placeholder">
   <defs>
     <radialGradient id="r1_1" cx="30%" cy="40%" r="55%">
-      <stop offset="0" stop-color="#f0a98e" stop-opacity=".4"/>
-      <stop offset="1" stop-color="#f0a98e" stop-opacity="0"/>
+      <stop offset="0" stop-color="#B4CEF3" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#B4CEF3" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="r2_1" cx="70%" cy="60%" r="60%">
-      <stop offset="0" stop-color="#e6c585" stop-opacity=".32"/>
-      <stop offset="1" stop-color="#e6c585" stop-opacity="0"/>
+      <stop offset="0" stop-color="#C9B9EF" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#C9B9EF" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="r3_1" cx="50%" cy="80%" r="55%">
-      <stop offset="0" stop-color="#a99bff" stop-opacity=".3"/>
-      <stop offset="1" stop-color="#a99bff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#B2C14A" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#B2C14A" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="400" height="480" fill="#1b1e34"/>
+  <rect width="400" height="480" fill="#FCFDF8"/>
   <rect width="400" height="480" fill="url(#r1_1)"/>
   <rect width="400" height="480" fill="url(#r2_1)"/>
   <rect width="400" height="480" fill="url(#r3_1)"/>

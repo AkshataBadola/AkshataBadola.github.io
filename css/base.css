@@ -1,7 +1,8 @@
 /* ==========================================================================
    base.css — Reset, CSS custom properties (design tokens), and typography.
-   Everything that defines "what the site looks like at the atomic level"
-   lives here. Change a token here to re-theme the whole site.
+   Palette: cream · lavender · soft blue · lime · ink (Granola-inspired).
+   Fonts: Alegreya (display, headlines) · Manrope (body, UI).
+   Change tokens here to re-theme the whole site.
    ========================================================================== */
 
 /* ---------- 1. Modern reset -------------------------------------------- */
@@ -15,7 +16,6 @@ a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
 input, textarea { background: transparent; border: none; outline: none; }
 
-/* Smooth, but keep accessibility promises */
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -28,90 +28,90 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
 /* ---------- 2. Design tokens (CSS variables) --------------------------- */
 :root {
-  /* --- Colour: Midnight-indigo surface palette --- */
-  --bg-0: #0e0f1a;          /* page background, deepest */
-  --bg-1: #141627;          /* elevated surface */
-  --bg-2: #1b1e34;          /* card surface */
-  --bg-3: #242748;          /* hovered card / inner element */
-  --surface-glass: rgba(27, 30, 52, 0.55);
-  --surface-glass-strong: rgba(20, 22, 39, 0.78);
+  /* --- Palette: 5 colours from the brief --- */
+  --cream:        #FCFDF8;
+  --lavender:     #C9B9EF;
+  --soft-blue:    #B4CEF3;
+  --lime:         #B2C14A;
+  --ink:          #1E1E1E;
 
-  /* --- Colour: Text --- */
-  --text-primary: #f3f1ea;   /* warm white */
-  --text-secondary: #b8b9ce; /* cool muted */
-  --text-tertiary: #7f8199;  /* dim labels, meta */
+  /* --- Surface tokens (light theme is now the default) --- */
+  --bg-0: var(--cream);                /* page background */
+  --bg-1: #ffffff;                     /* elevated surface */
+  --bg-2: #f6f3ea;                     /* card surface, warm cream */
+  --bg-3: #eee9db;                     /* hovered / inner element */
+  --surface-glass: rgba(255,255,255,0.72);
+  --surface-glass-strong: rgba(252,253,248,0.88);
 
-  /* --- Colour: Borders --- */
-  --border-soft: rgba(255, 255, 255, 0.07);
-  --border-strong: rgba(255, 255, 255, 0.14);
+  /* --- Text --- */
+  --text-primary: var(--ink);
+  --text-secondary: #4a4a4a;
+  --text-tertiary: #767676;
 
-  /* --- Colour: Accents --- */
-  --accent-violet: #a99bff;        /* primary — soft lavender/periwinkle */
-  --accent-violet-strong: #7c6cff; /* on-hover / solid state */
-  --accent-teal: #7ad7c6;          /* secondary muted mint/teal */
-  --accent-coral: #f0a98e;         /* warm highlight (sparingly) */
-  --accent-gold: #e6c585;          /* editorial accent */
+  /* --- Borders --- */
+  --border-soft: rgba(30, 30, 30, 0.08);
+  --border-strong: rgba(30, 30, 30, 0.16);
+
+  /* --- Accents --- */
+  --accent-violet: var(--lavender);          /* primary */
+  --accent-violet-strong: #a893e4;           /* deeper lavender (hover) */
+  --accent-blue: var(--soft-blue);
+  --accent-lime: var(--lime);
+  --accent-lime-strong: #9fac3f;
+  --accent-coral: var(--lavender);           /* legacy alias — keeps component CSS happy */
+  --accent-teal: var(--soft-blue);           /* legacy alias */
+  --accent-gold: var(--lime);                /* legacy alias */
 
   /* --- Semantic --- */
-  --color-link: var(--accent-violet);
-  --color-link-hover: #c9bfff;
-  --color-success: #7ad7c6;
-  --color-error:   #ff8c9a;
-  --focus-ring:    0 0 0 2px var(--bg-0), 0 0 0 4px var(--accent-violet);
+  --color-link: #6a56c7;                     /* darker lavender for readable links */
+  --color-link-hover: #4b36a5;
+  --color-success: var(--lime);
+  --color-error:   #c0384a;
+  --focus-ring:    0 0 0 2px var(--bg-0), 0 0 0 4px var(--ink);
 
-  /* --- Gradients (used sparingly for hero + highlights) --- */
+  /* --- Gradients (used sparingly) --- */
   --gradient-aurora:
-    radial-gradient(1200px 500px at 10% -10%, rgba(169,155,255,0.22), transparent 60%),
-    radial-gradient(900px 500px at 110% 20%, rgba(240,169,142,0.14), transparent 55%),
-    radial-gradient(800px 500px at 50% 110%, rgba(122,215,198,0.14), transparent 55%);
+    radial-gradient(1100px 460px at 10% -10%, rgba(201,185,239,0.42), transparent 60%),
+    radial-gradient(900px 500px at 110% 20%, rgba(180,206,243,0.30), transparent 55%),
+    radial-gradient(800px 500px at 50% 110%, rgba(178,193,74,0.14), transparent 55%);
   --gradient-text:
-    linear-gradient(135deg, var(--accent-violet) 0%, var(--accent-coral) 60%, var(--accent-gold) 100%);
+    linear-gradient(135deg, #6a56c7 0%, var(--lavender) 50%, var(--lime) 100%);
   --gradient-card-hover:
-    linear-gradient(135deg, rgba(169,155,255,0.08), rgba(240,169,142,0.06));
+    linear-gradient(135deg, rgba(201,185,239,0.14), rgba(180,206,243,0.10));
 
   /* --- Typography scale --- */
-  --font-display: "Fraunces", "Playfair Display", Georgia, serif;
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: "Alegreya", "Fraunces", Georgia, serif;
+  --font-sans:    "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono:    "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --fs-xs:   clamp(0.75rem, 0.72rem + 0.1vw, 0.8rem);
   --fs-sm:   clamp(0.85rem, 0.82rem + 0.1vw, 0.9rem);
   --fs-base: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
   --fs-lg:   clamp(1.1rem, 1rem + 0.4vw, 1.25rem);
   --fs-xl:   clamp(1.35rem, 1.2rem + 0.6vw, 1.6rem);
-  --fs-2xl:  clamp(1.75rem, 1.4rem + 1.4vw, 2.4rem);
-  --fs-3xl:  clamp(2.25rem, 1.8rem + 2vw, 3.2rem);
-  --fs-hero: clamp(2.75rem, 2rem + 4vw, 5rem);
+  --fs-2xl:  clamp(1.8rem, 1.4rem + 1.4vw, 2.5rem);
+  --fs-3xl:  clamp(2.35rem, 1.85rem + 2.2vw, 3.4rem);
+  --fs-hero: clamp(2.85rem, 2rem + 4.2vw, 5.4rem);
 
-  --lh-tight: 1.15;
-  --lh-base: 1.6;
-  --lh-loose: 1.75;
+  --lh-tight: 1.08;        /* Alegreya reads tight */
+  --lh-base: 1.65;
+  --lh-loose: 1.78;
 
-  /* --- Spacing scale --- */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.5rem;
-  --space-6: 2rem;
-  --space-7: 3rem;
-  --space-8: 4.5rem;
-  --space-9: 6rem;
-  --space-10: 8rem;
+  /* --- Spacing --- */
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+  --space-4: 1rem; --space-5: 1.5rem; --space-6: 2rem;
+  --space-7: 3rem; --space-8: 4.5rem; --space-9: 6rem; --space-10: 8rem;
 
   /* --- Radius --- */
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
-  --radius-pill: 999px;
+  --radius-sm: 6px; --radius-md: 14px; --radius-lg: 22px;
+  --radius-xl: 32px; --radius-pill: 999px;
 
-  /* --- Shadow / glow --- */
-  --shadow-sm: 0 2px 8px rgba(0,0,0,0.25);
-  --shadow-md: 0 8px 24px rgba(0,0,0,0.35);
-  --shadow-lg: 0 20px 60px rgba(0,0,0,0.45);
-  --glow-violet: 0 0 36px rgba(169,155,255,0.22);
-  --glow-coral:  0 0 36px rgba(240,169,142,0.2);
+  /* --- Shadow / glow (softer for the light theme) --- */
+  --shadow-sm: 0 1px 2px rgba(30,30,30,0.06), 0 2px 6px rgba(30,30,30,0.05);
+  --shadow-md: 0 6px 20px rgba(30,30,30,0.08), 0 2px 6px rgba(30,30,30,0.05);
+  --shadow-lg: 0 20px 60px rgba(30,30,30,0.14), 0 6px 20px rgba(30,30,30,0.08);
+  --glow-violet: 0 0 36px rgba(201,185,239,0.45);
+  --glow-coral:  0 0 36px rgba(201,185,239,0.35);
 
   /* --- Layout --- */
   --container-max: 1200px;
@@ -122,27 +122,30 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   --transition-slow: 480ms cubic-bezier(.4,.0,.2,1);
 }
 
-/* ---------- 3. Optional light theme (toggle via [data-theme=light]) ---- */
-[data-theme="light"] {
-  --bg-0: #f6f3ec;
-  --bg-1: #ffffff;
-  --bg-2: #fbf7ee;
-  --bg-3: #efe9db;
-  --surface-glass: rgba(255,255,255,0.7);
-  --surface-glass-strong: rgba(255,255,255,0.9);
-  --text-primary: #1b1e34;
-  --text-secondary: #4a4d66;
-  --text-tertiary: #767893;
-  --border-soft: rgba(27,30,52,0.09);
-  --border-strong: rgba(27,30,52,0.18);
-  --accent-violet: #6a56f0;
-  --accent-violet-strong: #4b36d0;
-  --color-link: #6a56f0;
-  --color-link-hover: #4b36d0;
+/* ---------- 3. Optional dark theme (toggle via [data-theme=dark]) ------
+   The default is now LIGHT; the toggle button inverts to a dark variant. */
+[data-theme="dark"] {
+  --bg-0: #1a1a24;
+  --bg-1: #22222e;
+  --bg-2: #2a2a38;
+  --bg-3: #353546;
+  --surface-glass: rgba(42, 42, 56, 0.65);
+  --surface-glass-strong: rgba(26, 26, 36, 0.85);
+  --text-primary: #f3f1ea;
+  --text-secondary: #c8c6ce;
+  --text-tertiary: #8e8c96;
+  --border-soft: rgba(255,255,255,0.08);
+  --border-strong: rgba(255,255,255,0.16);
+  --color-link: var(--lavender);
+  --color-link-hover: #e4daff;
+  --focus-ring: 0 0 0 2px var(--bg-0), 0 0 0 4px var(--lavender);
   --gradient-aurora:
-    radial-gradient(1200px 500px at 10% -10%, rgba(106,86,240,0.1), transparent 60%),
-    radial-gradient(900px 500px at 110% 20%, rgba(240,169,142,0.1), transparent 55%),
-    radial-gradient(800px 500px at 50% 110%, rgba(122,215,198,0.12), transparent 55%);
+    radial-gradient(1100px 460px at 10% -10%, rgba(201,185,239,0.18), transparent 60%),
+    radial-gradient(900px 500px at 110% 20%, rgba(180,206,243,0.14), transparent 55%),
+    radial-gradient(800px 500px at 50% 110%, rgba(178,193,74,0.08), transparent 55%);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
+  --shadow-md: 0 6px 20px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.5), 0 6px 20px rgba(0,0,0,0.3);
 }
 
 /* ---------- 4. Base typography & body ---------------------------------- */
@@ -159,48 +162,49 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   min-height: 100vh;
+  font-feature-settings: "ss01", "cv11";
+  letter-spacing: -0.005em;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 500;
   line-height: var(--lh-tight);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   color: var(--text-primary);
 }
-h1 { font-size: var(--fs-hero); letter-spacing: -0.02em; }
-h2 { font-size: var(--fs-3xl); }
-h3 { font-size: var(--fs-2xl); }
-h4 { font-size: var(--fs-xl); }
-h5 { font-size: var(--fs-lg); }
-h6 { font-size: var(--fs-base); text-transform: uppercase; letter-spacing: 0.08em; font-family: var(--font-sans); font-weight: 600; }
+h1 { font-size: var(--fs-hero); letter-spacing: -0.025em; font-weight: 500; }
+h2 { font-size: var(--fs-3xl); font-weight: 500; }
+h3 { font-size: var(--fs-2xl); font-weight: 500; }
+h4 { font-size: var(--fs-xl); font-weight: 500; }
+h5 { font-size: var(--fs-lg); font-weight: 500; }
+h6 {
+  font-size: var(--fs-base);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--text-tertiary);
+}
 
 p { color: var(--text-secondary); max-width: 70ch; }
 
-a {
-  color: var(--color-link);
-  transition: color var(--transition-fast);
-}
+a { color: var(--color-link); transition: color var(--transition-fast); }
 a:hover { color: var(--color-link-hover); }
 
-code, pre {
-  font-family: var(--font-mono);
-  font-size: 0.92em;
-}
+code, pre { font-family: var(--font-mono); font-size: 0.92em; }
 
 ::selection {
-  background: rgba(169,155,255,0.35);
-  color: var(--text-primary);
+  background: var(--lavender);
+  color: var(--ink);
 }
 
-/* Focus ring applied everywhere interactive */
 :focus-visible {
   outline: none;
   box-shadow: var(--focus-ring);
   border-radius: 4px;
 }
 
-/* Utility: screen-reader-only label */
 .visually-hidden {
   position: absolute;
   width: 1px; height: 1px;
@@ -211,20 +215,18 @@ code, pre {
   border: 0;
 }
 
-/* Skip link for keyboard users */
 .skip-link {
   position: absolute;
   top: -40px; left: 0;
-  background: var(--accent-violet);
-  color: var(--bg-0);
+  background: var(--ink);
+  color: var(--cream);
   padding: var(--space-3) var(--space-5);
   z-index: 2000;
   border-radius: 0 0 var(--radius-md) 0;
   font-weight: 600;
 }
-.skip-link:focus { top: 0; color: var(--bg-0); }
+.skip-link:focus { top: 0; color: var(--cream); }
 
-/* Gradient text helper */
 .gradient-text {
   background: var(--gradient-text);
   -webkit-background-clip: text;
